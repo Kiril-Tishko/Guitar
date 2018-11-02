@@ -1,0 +1,167 @@
+body {
+	background: url(../img/background.jpg) no-repeat;
+	background-color: #1d1d1d;
+	background-size: cover;
+}
+
+.title {
+	font-family: 'Droid Serif';
+	font-size: 43px;
+	color: #ad7835;
+	font-weight: normal;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title::before {
+	content: '';
+	left: 0;
+	bottom: -10px;
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: #ad7835;
+}
+
+/*	HEADER	*/
+.header {
+	margin-top: 140px;
+	margin-bottom: 155px;
+}
+
+.characteristic {
+	display: flex;
+	width: 836px;
+	height: 298px;
+	padding: 58px 51px;
+	margin: 0 auto;
+	background: #373737;
+}
+
+.characteristic__text {
+	width: 350px;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 78px;
+}
+
+.text__title {
+	font-family: 'Droid Serif';
+	font-size: 32px;
+	color: #ad7835;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.text__content {
+	line-height: 1.3em;
+}
+
+.characteristic__img {
+	width: 423px;
+	height: 473px;
+	background: url(../img/guitar.jpg) no-repeat center center / cover;
+	background-color: #131419;
+	margin-top: -95px;
+}
+
+
+/*	DESCRIPTION	*/
+.description {
+	margin-bottom: 140px;
+}
+
+.description__title {
+	width: 240px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.description__text {
+	width: 920px;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #ebebeb;
+}
+
+
+/*	PHOTO	*/
+.photo {
+	margin-bottom: 170px;
+}
+
+.photo__title {
+	width: 150px;
+	margin-bottom: 110px;
+}
+
+.photo__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 1015px;
+	margin: 0 auto;
+}
+
+.photo__gallery img {
+	margin-top: 35px;
+}
+
+
+/*	MUSIC	*/
+.music {
+	width: 462px;
+	margin: 0 auto;
+	margin-bottom: 180px;
+}
+
+.audiojs {
+	margin-top: 15px;
+}
+
+
+/*	FOOTER	*/
+.s-networks {
+	width: 270px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.s-networks a {
+	height: 45px;
+	width: 45px;
+	border: solid 1px rgba(173,120,53,.8);
+}
+
+.fab {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ad7835;
+	margin-top: 10px;
+	margin-left: 17px;
+}
+
+.s-networks a:hover {
+	background: #ad7835;
+	transition: all 0.5s;
+}
+
+.s-networks a:hover .fab {
+	color: #1d1d1d;
+	transition: all 0.5s;
+}
+
+.fa-twitter {
+		margin-left: 13px;
+}
+
+.fa-instagram {
+	margin-left: 14px;
+}
+
+.fa-pinterest-p {
+	margin-left: 15.5px;
+}
