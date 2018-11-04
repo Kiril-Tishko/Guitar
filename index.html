@@ -3,10 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Guitar</title>
-	<script src="./audiojs/audio.min.js"></script>
-  <script>audiojs.events.ready(function(){audiojs.createAll()});</script>
-  <!-- <audio src="fortuna.mp3" preload="auto"></audio> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,7 +24,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="characteristic__img"></div>
+			<img src="img/img5-min.jpg" alt="Guitar" class="characteristic__img">
 		</div>
 	</header>
 
@@ -37,10 +35,13 @@
 		</h2>
 		<div class="description__text">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. pteur sint occaecat cupidatat non. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Early 1980s McPherson JL-55M 12-string Acoustic, Serial Number 6!
 			</p>
 			<p>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Today McPherson Guitars are known for their incredible high-end acoustics based out of Wisconsin. However, before that Matt McPherson’s father designed guitars and had them built in Japan. This early production JL-55M is awesome and has a sound that’s quite impossible to find anywhere else! Solid spruce top, rosewood back/sides, unique sound hole layout and built in electronics!
+			</p>
+			<p>
+				Mathew McPhereson, Sr was granted a <a href="https://patents.justia.com/patent/4317402" target="_blank" >patent #4317402</a> for his incredible invention of a three sound hole design which is responsible for this one of a kind instrument.
 			</p>
 		</div>
 	</section>
@@ -51,24 +52,21 @@
 			Gallery
 		</h2>
 		<div class="photo__gallery">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
-			<img src="img/gallery-photo.jpg" alt="Guitar">
+			<img src="img/img1-min.jpg" alt="Guitar" class="gallery__img-1 gallery__img">
+			<img src="img/img2-min.jpg" alt="Guitar" class="gallery__img-2 gallery__img">
+			<img src="img/img3-min.jpg" alt="Guitar" class="gallery__img-3 gallery__img">
+			<img src="img/img4-min.jpg" alt="Guitar" class="gallery__img-4 gallery__img">
+			<img src="img/img5-min.jpg" alt="Guitar" class="gallery__img-5 gallery__img">
+			<img src="img/img6-min.jpg" alt="Guitar" class="gallery__img-6 gallery__img">
 		</div>
 	</section>
 
 	<!--	MUSIC	-->
 	<section class="music">
-		<audio src="music/fortuna.mp3" preload="auto" class="music__audio"></audio>
-		<audio src="music/fortuna.mp3" preload="auto" class="music__audio"></audio>
-		<audio src="music/fortuna.mp3" preload="auto" class="music__audio"></audio>
-		<audio src="music/fortuna.mp3" preload="auto" class="music__audio"></audio>
+		<audio src="music/electro-guitara.mp3" preload="auto" class="music__audio"></audio>
+		<audio src="music/pirate.mp3" preload="auto" class="music__audio"></audio>
+		<audio src="music/river-flows-in-you.mp3" preload="auto" class="music__audio"></audio>
+		<audio src="music/magic_circle.mp3" preload="auto" class="music__audio"></audio>
 	</section>
 
 	<!--	FOOTER	-->
@@ -80,4 +78,20 @@
 			<a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
 		</div>
 	</footer>
+
+	<div class="modal" id="modal">
+		<div class="modal__overlay">
+			<img src="img/img1.jpg" alt="" class="modal__img1 modal__img">
+			<img src="img/img2.jpg" alt="" class="modal__img2 modal__img">
+			<img src="img/img3.jpg" alt="" class="modal__img3 modal__img">
+			<img src="img/img4.jpg" alt="" class="modal__img4 modal__img">
+			<img src="img/img5.jpg" alt="" class="modal__img5 modal__img">
+			<img src="img/img6.jpg" alt="" class="modal__img6 modal__img">
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="./js/audio.min.js"></script>
+  <script>audiojs.events.ready(function(){audiojs.createAll()});</script>	
+</body>
 </html>
