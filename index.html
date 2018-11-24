@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Guitar</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -71,22 +71,42 @@
 
 	<!--	FOOTER	-->
 	<footer class="footer">
-		<div class="s-networks">
-			<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+		<div class="footer__contact">
+			<img src="img/contact-img.jpg" alt="" class="contact__img">
+			<div class="contact__form">
+				<h3 class="form__title title">
+					Contact
+				</h3>
+				<form action="php/mail.php" method="POST" class="form__form">
+					<div class="form__email-name">
+						<input type="text" class="form__name" name="user_name" maxlength="20" placeholder="Your name">
+						<input type="text" class="form__email" name="user_email" maxlength="40" placeholder="Your email">
+					</div>
+					<textarea class="form__message" name="user_text" cols="30" rows="10" placeholder="Message"></textarea>
+					<button type="submit" class="form__btn">send message</button>
+				</form>
+			</div>
 		</div>
 	</footer>
 
+	<!--	FOOTER	-->
+	<!-- <footer class="footer">
+		<div class="s-networks">
+			<a href="https://www.facebook.com/yanfosec" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://twitter.com/yanfosec?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://plus.google.com/106626002034313616594" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+		</div>
+	</footer> -->
+
 	<div class="modal" id="modal">
 		<div class="modal__overlay">
-			<img src="img/img1.jpg" alt="" class="modal__img1 modal__img">
-			<img src="img/img2.jpg" alt="" class="modal__img2 modal__img">
-			<img src="img/img3.jpg" alt="" class="modal__img3 modal__img">
-			<img src="img/img4.jpg" alt="" class="modal__img4 modal__img">
-			<img src="img/img5.jpg" alt="" class="modal__img5 modal__img">
-			<img src="img/img6.jpg" alt="" class="modal__img6 modal__img">
+			<img src="img/img1.jpg" alt="Guitar" class="modal__img1 modal__img">
+			<img src="img/img2.jpg" alt="Guitar" class="modal__img2 modal__img">
+			<img src="img/img3.jpg" alt="Guitar" class="modal__img3 modal__img">
+			<img src="img/img4.jpg" alt="Guitar" class="modal__img4 modal__img">
+			<img src="img/img5.jpg" alt="Guitar" class="modal__img5 modal__img">
+			<img src="img/img6.jpg" alt="Guitar" class="modal__img6 modal__img">
 		</div>
 	</div>
 

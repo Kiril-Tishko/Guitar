@@ -70,7 +70,7 @@ a {
 .characteristic__img {
 	width: 388px;
 	height: 500px;
-	margin-top: -97px;
+	margin-top: -100px;
 }
 
 
@@ -95,10 +95,6 @@ a {
 
 
 /*	PHOTO	*/
-.photo {
-	margin-bottom: 170px;
-}
-
 .photo__title {
 	width: 150px;
 	margin-bottom: 110px;
@@ -132,7 +128,7 @@ a {
 .music {
 	width: 462px;
 	margin: 0 auto;
-	margin-bottom: 180px;
+	margin-top: 170px;
 }
 
 .audiojs {
@@ -141,7 +137,109 @@ a {
 
 
 /*	FOOTER	*/
-.s-networks {
+.footer {
+	margin-top: 180px;
+	margin-bottom: 180px;
+}
+
+.footer__contact {
+	display: flex;
+	width: 602px;
+	height: 288px;
+	margin: 0 auto;
+	background: #373737;
+	padding: 0 35px;
+}
+
+.contact__img {
+	height: 340px;
+	margin-top: -26px;
+}
+
+.contact__form {
+	width: 100%;
+	margin-left: 58px;
+}
+
+.form__title {
+	font-size: 30px;
+	margin-top: 35px;
+}
+
+.title::before {
+	width: 40px;
+}
+
+.form__form {
+	width: 242px;
+	margin-top: 30px;
+}
+
+.form__name, .form__email, .form__message {
+	background: rgba(.0,.0,.0,0);
+	color: #fff;
+	font-size: 14px;
+	border: none;
+	border-bottom: 1px solid #535353;
+}
+
+input::-webkit-input-placeholder {
+	color: #d9d9d9;
+}
+
+input::-moz-placeholder {
+	color: #d9d9d9;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #d9d9d9;
+}
+
+textarea::-moz-placeholder {
+	color: #d9d9d9;
+}
+
+.form__email-name {
+	display: flex;
+}
+
+.form__email-name * {
+	height: 30px;
+	width: 110px;
+}
+
+.form__name {
+	margin-right: 20px;
+}
+
+.form__message {
+	height: 52px;
+	width: 100%;
+	margin-top: 20px;
+	resize: none;
+}
+
+.form__btn {
+	width: 100px;
+	height: 33px;
+	background: rgba(.0,.0,.0,0);
+	font-size: 10px;
+	font-weight: bold;
+	color: #ad7835;
+	text-transform: uppercase;
+	border: 2px solid #53412c;
+	cursor: pointer;
+	margin-top: 25px;
+}
+
+.form__btn:hover {
+	background: #53412c;
+	color: #ba823c;
+}
+
+
+/*	FOOTER	*/
+/*.s-networks {
 	width: 270px;
 	display: flex;
 	justify-content: space-between;
@@ -160,7 +258,7 @@ a {
 	font-size: 20px;
 	font-weight: bold;
 	color: #ad7835;
-	margin-top: 10px;
+	margin-top: 11px;
 	margin-left: 17px;
 }
 
@@ -174,17 +272,21 @@ a {
 	transition: all 0.5s;
 }
 
+.fa-facebook-f {
+	margin-left: 19px;
+}
+
 .fa-twitter {
-		margin-left: 13px;
+	margin-left: 13px;
 }
 
 .fa-instagram {
 	margin-left: 14px;
 }
 
-.fa-pinterest-p {
-	margin-left: 15.5px;
-}
+.fa-google-plus-g {
+	margin-left: 11.5px;
+}*/
 
 
 /*	MODAL	*/
@@ -195,6 +297,7 @@ a {
 	height: 100%;
 	left: 50%;
 	top: 50%;
+	margin-top: 180px;
 }
 
 .modal__overlay {
@@ -204,6 +307,7 @@ a {
 	height: 100%;
 	left: 0%;
 	top: 0%;
+	z-index: 345345s;
 }
 
 .modal__img {
@@ -211,6 +315,7 @@ a {
 	max-width: 95vw;
 	max-height: 95vh;
 	position: absolute;
+	z-index: 921423423423;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
