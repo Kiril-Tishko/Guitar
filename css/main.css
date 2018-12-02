@@ -208,6 +208,7 @@ a {
 
 .contact__img {
 	width: 303px;
+	min-width: 303px;
 	height: 340px;
 	margin-top: -26px;
 }
