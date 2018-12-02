@@ -8,7 +8,6 @@ body {
 	background-color: #1d1d1d;
 	background-size: cover;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 a {
