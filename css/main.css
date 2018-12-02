@@ -8,6 +8,7 @@ body {
 	background-color: #1d1d1d;
 	background-size: cover;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -137,10 +138,6 @@ a {
   animation-duration: 1.5s;
 }
 
-.gallery__img-1 {
-	animation-delay: 0;
-}
-
 .gallery__img-2 {
 	animation-delay: 0.2s;
 }
@@ -233,7 +230,7 @@ a {
 }
 
 .form__name, .form__email, .form__message {
-	background: rgba(.0,.0,.0,0);
+	background: rgba(0,0,0,0);
 	color: #fff;
 	font-size: 14px;
 	border: none;
@@ -286,7 +283,7 @@ textarea:focus, input:focus {
 .form__btn {
 	width: 100px;
 	height: 33px;
-	background: rgba(.0,.0,.0,0);
+	background: rgba(0,0,0,0);
 	font-size: 10px;
 	font-weight: bold;
 	color: #ad7835;
@@ -376,7 +373,6 @@ textarea:focus, input:focus {
 	height: 100%;
 	left: 0%;
 	top: 0%;
-	z-index: 345345s;
 }
 
 .modal__img {
@@ -384,7 +380,6 @@ textarea:focus, input:focus {
 	max-width: 95vw;
 	max-height: 95vh;
 	position: absolute;
-	z-index: 921423423423;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
