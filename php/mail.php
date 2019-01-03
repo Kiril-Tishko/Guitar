@@ -1,31 +1,22 @@
-<?php 
+<?php
+header("Content-type: text/css");
+if (!empty($_POST)) {
+	$message = "Вам пришло новое сообщение с сайта turbo-guitar.com: \n"
+	. "Имя пользователя: " . $_POST['form__name'] . "\n"
+	. "Email пользователя: " . $_POST['form__email'] . "\n"
+	. "Сообщение от пользователя: \n" . $_POST['form__message'];
 
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
+	$headers = "From: sait-domen@gmail.com";
 
-$name = $_POST['user_name'];
-$email = $_POST['user_email'];
-$text = $_POST['user_text'];
+	$resultMail = mail("site-owner@gmail.com", "Сообщение с сайта", $message, $headers);
 
-$mail->isSMTP();	// Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';	// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;	// Enable SMTP authentication
-$mail->Username = 'dzharuzov@mail.ru';	// Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '12345';	// email password
-$mail->SMTPSecure = 'ssl';	// Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;
 
-$mail->setFrom('dzharuzov@mail.ru');
-$mail->isHTML(true);	// Set email format to HTML
-
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его email ' .$email. '<br>Сообщение от пользователя: ' .$text;
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thank-you.html');
+	if ( $resultMail ) {
+		?>
+			<link rel="stylesheet" href="../css/main.css">
+		<?php
+	} else {
+		
+	}
 }
 ?>
