@@ -237,14 +237,6 @@ a {
   animation-fill-mode: both;
 }
 
-@media (prefers-reduced-motion) {
-  .animated {
-    -webkit-animation: unset !important;
-    animation: unset !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
 
 .gallery__img {
   animation-duration: 1.5s;
